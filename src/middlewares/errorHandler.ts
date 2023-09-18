@@ -38,7 +38,7 @@ export default function errorHandler(error: errorsProtocol.CustomError, req: Req
             break;
 
         case "tooManyResults":
-        case "dbConnectionFailed":
+        case "dbFailure":
             res
                 .status(httpStatus.INTERNAL_SERVER_ERROR)
                 .send('🚫 Internal Server Error!\n\n' + error.message);
