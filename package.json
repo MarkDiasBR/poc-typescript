@@ -1,0 +1,51 @@
+{
+  "name": "poc-typescript",
+  "version": "1.0.0",
+  "description": "Proof of concepf for Semana 1: Driven.t + TypeScript",
+  "main": "dist/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.ts",
+    "compile": "npx tsc && npx tsc-alias",
+    "build": "npm install && npm run compile",
+    "start": "node dist/app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarkDiasBR/poc-typescript.git"
+  },
+  "keywords": [
+    "Driven",
+    "Driven.t",
+    "POC",
+    "CRUD",
+    "TypeScript"
+  ],
+  "author": "MarkDiasBR",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MarkDiasBR/poc-typescript/issues"
+  },
+  "homepage": "https://github.com/MarkDiasBR/poc-typescript#readme",
+  "devDependencies": {
+    "@types/cors": "^2.8.14",
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.6.2",
+    "@types/pg": "^8.10.2",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.7",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "http-status": "^1.7.0",
+    "joi": "^17.10.2",
+    "pg": "^8.11.3"
+  }
+}
